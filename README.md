@@ -189,11 +189,6 @@ class ApiConfig {
 * Team and player data
 * League statistics
 
-### Video Processing API
-
-* Video downloading
-* Content processing and summarization
-* Highlight management
 
 ## 📱 App Screens
 
