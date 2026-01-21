@@ -4,10 +4,8 @@
 
 Smart Football App is a comprehensive Flutter application providing advanced football services, including:
 
-* **Live match tracking** from top global leagues
 * **Automatic video summarization** using AI
 * **Arabic-friendly user interface**
-* **Content management system** for highlights
 
 ##  Technical Stack
 
@@ -93,7 +91,7 @@ flutter_application_1/
 * Flutter SDK 3.2.3 or higher
 * Python 3.8 or higher
 * FFmpeg (for video playback)
-* CUDA (optional – for AI acceleration)
+
 
 ### Frontend Setup
 
@@ -250,4 +248,4 @@ class ApiConfig {
 * Faster processing
 * Lower resource usage
 * Better user experience
-* Multi-platform support
+
