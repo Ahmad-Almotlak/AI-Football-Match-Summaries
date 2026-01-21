@@ -47,12 +47,6 @@ Smart Football App is a comprehensive Flutter application providing advanced foo
 * Administrative interface for highlights
 * User interface for viewing highlights
 
-### 4. Video Playback
-
-* Advanced video player
-* Online streaming support
-* Full playback control
-* Intuitive user interface
 
 ## 📁 Project Structure
 
