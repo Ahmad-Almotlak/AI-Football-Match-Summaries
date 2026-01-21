@@ -1,117 +1,126 @@
-# تطبيق كرة القدم الذكي (Smart Football App)
+# Smart Football App
 
-## 📱 نظرة عامة
+## 📱 Overview
 
-تطبيق كرة القدم الذكي هو تطبيق Flutter متكامل يوفر خدمات متقدمة لمتابعة كرة القدم، بما في ذلك:
+Smart Football App is a comprehensive Flutter application providing advanced football services, including:
 
-- **متابعة المباريات المباشرة** من أهم البطولات العالمية
-- **تحميل وتلخيص مقاطع الفيديو** تلقائياً باستخدام الذكاء الاصطناعي
-- **واجهة مستخدم عربية** سهلة الاستخدام
-- **نظام إدارة محتوى** للملخصات
+* **Live match tracking** from top global leagues
+* **Automatic video summarization** using AI
+* **Arabic-friendly user interface**
+* **Content management system** for highlights
 
-## 🏗️ البنية التقنية
+##  Technical Stack
 
-### الواجهة الأمامية (Frontend)
-- **Flutter** - إطار عمل متعدد المنصات
-- **Dart** - لغة البرمجة
-- **Material Design** - تصميم الواجهة
-- **Media Kit** - تشغيل الفيديو
-- **HTTP** - الاتصال بالخادم
+### Frontend
 
-### الخادم الخلفي (Backend)
-- **FastAPI** - إطار عمل Python للواجهات البرمجية
-- **OpenCV** - معالجة الفيديو
-- **YOLO** - كشف الكائنات في الفيديو
-- **Whisper** - تحويل الصوت إلى نص
-- **yt-dlp** - تحميل الفيديوهات من YouTube
+* **Flutter** - Cross-platform framework
+* **Dart** - Programming language
+* **Material Design** - UI design
+* **Media Kit** - Video playback
+* **HTTP** - Server communication
 
-## 🚀 الميزات الرئيسية
+### Backend
 
-### 1. متابعة المباريات
-- عرض المباريات حسب التاريخ (أمس، اليوم، غداً)
-- تصفية حسب البطولات المهمة
-- معلومات مفصلة عن كل مباراة
-- ترجمة أسماء الفرق والبطولات للعربية
+* **FastAPI** - Python framework for APIs
+* **OpenCV** - Video processing
+* **YOLO** - Object detection in videos
+* **Whisper** - Speech-to-text
+* **yt-dlp** - Download videos from YouTube
 
-### 2. نظام التلخيص الذكي
-- تحميل مقاطع فيديو من روابط YouTube
-- تحليل تلقائي للفيديو باستخدام الذكاء الاصطناعي
-- كشف اللحظات المهمة (الأهداف، الفرص، التحكيم)
-- إنشاء ملخصات قصيرة ومفيدة
-- دعم اللغة العربية في التحليل
+## 🚀 Key Features
 
-### 3. إدارة المحتوى
-- واجهة إدارية للملخصات
-- واجهة مستخدم لعرض الملخصات
-- نظام تصنيف وتنظيم المحتوى
-- إحصائيات المشاهدة
+### 1. Match Tracking
 
-### 4. تشغيل الفيديو
-- مشغل فيديو متقدم
-- دعم التشغيل عبر الإنترنت
-- تحكم كامل في التشغيل
-- واجهة مستخدم بديهية
+* Display matches by date (Yesterday, Today, Tomorrow)
+* Filter by major leagues
+* Detailed match information
+* Translation of team and league names to Arabic
 
-## 📁 هيكل المشروع
+### 2. Smart Summarization
+
+* Download videos from YouTube links
+* Automatic video analysis using AI
+* Detect key moments (goals, chances, refereeing events)
+* Generate concise and useful highlights
+* Support Arabic language in analysis
+
+### 3. Content Management
+
+* Administrative interface for highlights
+* User interface for viewing highlights
+
+### 4. Video Playback
+
+* Advanced video player
+* Online streaming support
+* Full playback control
+* Intuitive user interface
+
+## 📁 Project Structure
 
 ```
 flutter_application_1/
-├── lib/                          # كود Flutter الرئيسي
-│   ├── components/               # المكونات المشتركة
-│   ├── config/                   # إعدادات التطبيق
-│   ├── constants/                # الثوابت والترجمات
-│   ├── linker/                   # خدمات الاتصال
-│   ├── screens/                  # شاشات التطبيق
-│   ├── services/                 # خدمات API
-│   ├── theme/                    # تصميم التطبيق
-│   └── widgets/                  # عناصر واجهة المستخدم
-├── backend/                      # الخادم الخلفي
-│   ├── FastAPIserver/            # خادم FastAPI
-│   │   ├── find_best/            # كشف اللحظات المهمة
-│   │   ├── important/            # معالجة اللحظات المهمة
-│   │   ├── mareg_voice_vidoe/    # دمج الصوت والفيديو
-│   │   ├── match_sum/            # تلخيص المباريات
-│   │   ├── read/                 # قراءة ومعالجة الفيديو
-│   │   ├── team_assigner/        # تعيين الفرق
-│   │   ├── trackers/             # تتبع الكائنات
-│   │   ├── utils/                # أدوات مساعدة
-│   │   ├── voice_analys/         # تحليل الصوت
-│   │   └── models/               # نماذج الذكاء الاصطناعي
-│   ├── DownloadedMatches/        # الفيديوهات المحملة
-│   └── summarises/               # الملخصات المُنشأة
-└── images/                       # الصور والأيقونات
+├── lib/                          # Main Flutter code
+│   ├── components/               # Shared components
+│   ├── config/                   # App configuration
+│   ├── constants/                # Constants and translations
+│   ├── linker/                   # API connection services
+│   ├── screens/                  # App screens
+│   ├── services/                 # API services
+│   ├── theme/                    # App theming
+│   └── widgets/                  # UI widgets
+├── backend/                      # Backend server
+│   ├── FastAPIserver/            # FastAPI server
+│   │   ├── find_best/            # Key moments detection
+│   │   ├── important/            # Key moments processing
+│   │   ├── merge_voice_video/    # Audio-video merging
+│   │   ├── match_sum/            # Match summarization
+│   │   ├── read/                 # Video reading & processing
+│   │   ├── team_assigner/        # Team assignment
+│   │   ├── trackers/             # Object tracking
+│   │   ├── utils/                # Utility functions
+│   │   ├── voice_analysis/       # Audio analysis
+│   │   └── models/               # AI models
+│   ├── DownloadedMatches/        # Downloaded videos
+│   └── summarises/               # Generated highlights
+└── images/                       # Images and icons
 ```
 
-## 🛠️ التثبيت والتشغيل
+## 🛠️ Installation & Running
 
-### متطلبات النظام
-- Flutter SDK 3.2.3 أو أحدث
-- Python 3.8 أو أحدث
-- FFmpeg (لتشغيل الفيديو)
-- CUDA (اختياري - لتسريع الذكاء الاصطناعي)
+### System Requirements
 
-### تثبيت الواجهة الأمامية
+* Flutter SDK 3.2.3 or higher
+* Python 3.8 or higher
+* FFmpeg (for video playback)
+* CUDA (optional – for AI acceleration)
+
+### Frontend Setup
+
 ```bash
-# تثبيت التبعيات
+# Install dependencies
 flutter pub get
 
-# تشغيل التطبيق
+# Run the app
 flutter run
 ```
 
-### تثبيت الخادم الخلفي
+### Backend Setup
+
 ```bash
 cd backend/FastAPIserver
 
-# تثبيت التبعيات
+# Install dependencies
 pip install -r requirements.txt
 
-# تشغيل الخادم
+# Run the server
 python main.py
 ```
 
-### إعداد متغيرات البيئة
-إنشاء ملف `lib/config/api_config.dart`:
+### Environment Variables
+
+Create file `lib/config/api_config.dart`:
+
 ```dart
 class ApiConfig {
   static const String footballApiKey = 'YOUR_FOOTBALL_API_KEY';
@@ -119,152 +128,126 @@ class ApiConfig {
 }
 ```
 
-## 🔧 التكوين
+## 🔧 Configuration
 
-### إعدادات API كرة القدم
-- الحصول على مفتاح API من [API-Football](https://www.api-football.com/)
-- إضافة المفتاح في `api_config.dart`
+### Football API Setup
 
-### إعدادات الخادم
-- تعديل عنوان IP في `main.py` للخادم
-- إعداد مجلدات التحميل والتلخيص
-- تكوين نماذج الذكاء الاصطناعي
+* Obtain an API key from [API-Football](https://www.api-football.com/)
+* Add the key in `api_config.dart`
 
-## 📊 البطولات المدعومة
+### Server Setup
 
-### البطولات الأوروبية الرئيسية
-- الدوري الإنجليزي الممتاز
-- الدوري الإسباني
-- الدوري الألماني
-- الدوري الإيطالي
-- الدوري الفرنسي
-- دوري أبطال أوروبا
-- الدوري الأوروبي
+* Adjust server IP in `main.py`
+* Set up download and summary folders
+* Configure AI models
 
-### البطولات العربية
-- الدوري السعودي للمحترفين
-- دوري الخليج العربي
-- دوري نجوم قطر
-- الدوري المصري الممتاز
-- البطولة المغربية
-- الدوري التونسي الأول
+## 📊 Supported Leagues
 
-### البطولات الدولية
-- كأس العالم
-- كوبا أمريكا
-- كأس الأمم الأفريقية
-- كأس آسيا
+### Major European Leagues
 
-## 🤖 تقنيات الذكاء الاصطناعي
+* English Premier League
+* La Liga
+* Bundesliga
+* Serie A
+* Ligue 1
+* UEFA Champions League
+* UEFA Europa League
 
-### كشف اللحظات المهمة
-- **YOLO Model**: كشف اللاعبين والكرة
-- **Object Tracking**: تتبع حركة الكائنات
-- **Event Detection**: كشف الأحداث المهمة
+### Arab Leagues
 
-### تحليل الصوت
-- **Whisper Model**: تحويل التعليق الصوتي إلى نص
-- **Audio Analysis**: تحليل نبرة الصوت والعاطفة
-- **Moment Classification**: تصنيف اللحظات حسب الأهمية
+* Saudi Pro League
+* UAE Arabian Gulf League
+* Qatar Stars League
+* Egyptian Premier League
+* Moroccan League
+* Tunisian Ligue 1
 
-### معالجة الفيديو
-- **Frame Extraction**: استخراج الإطارات المهمة
-- **Video Merging**: دمج اللحظات المهمة
-- **Quality Optimization**: تحسين جودة الفيديو النهائي
+### International Competitions
 
-## 🌐 واجهات برمجة التطبيقات (APIs)
+* FIFA World Cup
+* Copa America
+* Africa Cup of Nations
+* AFC Asian Cup
+
+## 🤖 AI Techniques
+
+### Key Moments Detection
+
+* **YOLO Model**: Player and ball detection
+* **Object Tracking**: Track object movements
+* **Event Detection**: Identify key events
+
+### Audio Analysis
+
+* **Whisper Model**: Convert commentary audio to text
+* **Audio Analysis**: Analyze tone and emotion
+* **Moment Classification**: Classify events by importance
+
+### Video Processing
+
+* **Frame Extraction**: Extract key frames
+* **Video Merging**: Merge important moments
+* **Quality Optimization**: Enhance final video quality
+
+## 🌐 APIs
 
 ### Football API
-- جلب معلومات المباريات
-- بيانات الفرق واللاعبين
-- إحصائيات البطولات
+
+* Retrieve match information
+* Team and player data
+* League statistics
 
 ### Video Processing API
-- تحميل الفيديوهات
-- معالجة وتلخيص المحتوى
-- إدارة الملخصات
 
-## 📱 شاشات التطبيق
+* Video downloading
+* Content processing and summarization
+* Highlight management
 
-### 1. شاشة المباريات
-- عرض المباريات حسب التاريخ
-- تصفية حسب البطولات
-- معلومات مفصلة عن كل مباراة
+## 📱 App Screens
 
-### 2. شاشة البطولات
-- قائمة البطولات المدعومة
-- ترتيب الفرق
-- إحصائيات البطولة
+### 1. Matches Screen
 
-### 3. شاشة الملخصات
-- عرض الملخصات المتاحة
-- تشغيل الفيديوهات
-- إدارة المحتوى
+* Display matches by date
+* Filter by league
+* Detailed match information
 
-### 4. شاشة البحث
-- البحث في المباريات
-- البحث في الفرق
-- البحث في البطولات
+### 2. Leagues Screen
 
-### 5. شاشة تسجيل الدخول
-- تسجيل دخول المستخدمين
-- تسجيل المستخدمين الجدد
-- إدارة الحسابات
+* List supported leagues
+* Team standings
+* League statistics
 
-## 🔒 الأمان والخصوصية
+### 3. Highlights Screen
 
-- تشفير الاتصالات
-- حماية البيانات الشخصية
-- إدارة الصلاحيات
-- مراقبة الاستخدام
+* View available highlights
+* Play videos
+* Manage content
 
-## 📈 الأداء والتحسين
+### 4. Search Screen
 
-### تحسين الأداء
-- تخزين مؤقت للبيانات
-- ضغط الفيديوهات
-- تحسين استهلاك الذاكرة
+* Search matches
+* Search teams
+* Search leagues
 
-### مراقبة الأداء
-- إحصائيات الاستخدام
-- مراقبة الأخطاء
-- تحليل الأداء
+### 5. Login Screen
 
-## 🤝 المساهمة
+* User login
+* New user registration
+* Account management
 
-نرحب بالمساهمات! يرجى اتباع الخطوات التالية:
+## 🔄 Future Updates
 
-1. Fork المشروع
-2. إنشاء فرع للميزة الجديدة
-3. إجراء التغييرات
-4. إرسال Pull Request
+### Planned Features
 
-## 📄 الترخيص
+* Support more leagues
+* Improve AI accuracy
+* Add match notifications
+* Live streaming support
+* Advanced statistics analysis
 
-هذا المشروع مرخص تحت رخصة MIT.
+### Technical Improvements
 
-## 📞 الدعم
-
-للحصول على الدعم أو الإبلاغ عن مشاكل:
-- إنشاء Issue في GitHub
-- التواصل عبر البريد الإلكتروني
-- مراجعة الوثائق
-
-## 🔄 التحديثات المستقبلية
-
-### الميزات المخططة
-- دعم المزيد من البطولات
-- تحسين دقة الذكاء الاصطناعي
-- إضافة إشعارات المباريات
-- دعم البث المباشر
-- تحليل إحصائيات متقدم
-
-### التحسينات التقنية
-- تحسين سرعة المعالجة
-- تقليل استهلاك الموارد
-- تحسين تجربة المستخدم
-- دعم المزيد من المنصات
-
----
-
-**ملاحظة**: هذا المشروع في مرحلة التطوير النشط. قد تتغير بعض الميزات والإعدادات مع التحديثات المستقبلية.
+* Faster processing
+* Lower resource usage
+* Better user experience
+* Multi-platform support
