@@ -204,9 +204,9 @@ class ApiConfig {
 * Team standings
 * League statistics
 
-### 3. Highlights Screen
+### 3. Summary Screen
 
-* View available highlights
+* View available Summaries
 * Play videos
 * Manage content
 
