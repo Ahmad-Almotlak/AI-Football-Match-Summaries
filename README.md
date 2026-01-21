@@ -198,7 +198,7 @@ class ApiConfig {
 * Filter by league
 * Detailed match information
  <img src="Images/Picture2.jpg" width="300" />
- <br><br>
+ <br>
 
 ### 2. Leagues Screen
 
@@ -206,11 +206,9 @@ class ApiConfig {
 * Team standings
 * League statistics
 
-
 <img src="Images/Picture3.jpg" width="300" />
 <img src="Images/Picture4.jpg" width="300" />
 <img src="Images/Picture5.jpg" width="300" />
-<br>
 <br>
 
 ### 3.Summary Screen
@@ -220,28 +218,26 @@ class ApiConfig {
 * Manage content
   
 <img src="Images/Picture7.jpg" width="300" />
-
 <img src="Images/Picture8.jpg" width="300" />
-<br><br>
+<br>
 
 ### 4. Search Screen
 
 * Search matches
 * Search teams
 * Search leagues
-<br>
+  
 <img src="Images/Picture6.jpg" width="300" />
-<br><br>
+<br>
 
 ### 5. Login Screen
 
 * User login
 * New user registration
 * Account management
-  <br><br>
-  <img src="Images/Picture1.jpg" width="300" />
-
-<br><br>
+ 
+<img src="Images/Picture1.jpg" width="300" />
+<br>
 
 
 ## 🔄 Future Updates
