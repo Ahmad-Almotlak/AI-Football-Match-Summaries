@@ -1,4 +1,4 @@
-# Smart Football App
+# AI-Football-Match-Summaries
 
 ## 📱 Overview
 
