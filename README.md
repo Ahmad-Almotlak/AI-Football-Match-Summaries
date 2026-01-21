@@ -23,7 +23,7 @@ Smart Football App is a comprehensive Flutter application providing advanced foo
 * **OpenCV** - Video processing
 * **YOLO** - Object detection in videos
 * **Whisper** - Speech-to-text
-* **yt-dlp** - Download videos from YouTube
+* **yt-dlp** - Download videos
 
 ## 🚀 Key Features
 
