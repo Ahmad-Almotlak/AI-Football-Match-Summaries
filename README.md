@@ -39,13 +39,13 @@ Smart Football App is a comprehensive Flutter application providing advanced foo
 * Download videos from YouTube links
 * Automatic video analysis using AI
 * Detect key moments (goals, chances, refereeing events)
-* Generate concise and useful highlights
+* Generate concise and useful Summaries
 * Support Arabic language in analysis
 
 ### 3. Content Management
 
-* Administrative interface for highlights
-* User interface for viewing highlights
+* Administrative interface for Summaries
+* User interface for viewing Summaries
 
 
 ## 📁 Project Structure
@@ -74,7 +74,7 @@ flutter_application_1/
 │   │   ├── voice_analysis/       # Audio analysis
 │   │   └── models/               # AI models
 │   ├── DownloadedMatches/        # Downloaded videos
-│   └── summarises/               # Generated highlights
+│   └── summarises/               # Generated Summary
 └── images/                       # Images and icons
 ```
 
